@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.Di3trich'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '26.0.3'
 
 packagingOptions{
     doNotStrip '*/mips/*.so'
@@ -11,7 +12,7 @@ packagingOptions{
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 24
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         ndk {
@@ -35,5 +36,5 @@ packagingOptions{
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:support-v4:24.2.1'
+    implementation 'com.android.support:support-v4:27.1.1'
 }
